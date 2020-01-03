@@ -22,9 +22,6 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh 'echo "Deploy"'
-                sh 'docker kill Petclinic ||true'
-                sh 'docker rm Petclinic ||true'
-                sh 'docker run -d -i -t -p 8080:8080 --name Petclinic petclinic'
             }
         }
     }
