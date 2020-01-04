@@ -15,7 +15,7 @@
         }
         stage('Test'){
             steps {
-                sh 'echo "test"'
+                sh './mvnw clean test'
                 
             }
         }
